@@ -1,0 +1,47 @@
+.container{
+	background-color: #ccc;
+	height: 500px;
+	display: flex;
+	flex-direction: row;
+	/* column | row | row-reverse | column-reverse */
+	flex-wrap: nowrap;
+	/* wrap | nowrap | wrap-reverse*/
+
+	/*flex-flow: row nowrap;*/
+
+	justify-content: flex-start;
+	/* flex-end | center | space-between | space-around */
+
+	align-items: stretch;
+	/* stretch: os filhos ficam com o mesmo height do pai
+	baseline: faz o alinhamento dos itens baseado no seu conteúdo*/
+	/*flex-start | flex-end | center | baseline*/
+	align-content: flex-start;
+	/* flex-start | flex-end | center | space-between | space-around */
+}	
+
+.item{
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	margin: 5px;
+	height: 30px;
+
+	/*flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 300px;*/
+	/*flex-grow: os itens tem a mesma largura*/
+	flex: 1 1 300px;
+	/*flex: flex-grow flex-shrink flex-basis*/
+}
+
+.article-01{flex-shrink: 3;}
+
+/*.article-01 {flex-grow: 3}*/
+
+/*
+.article-01 {order: 3;}
+.article-02 {order: 1; align-self: auto;}
+.article-03 {order: 2;}
+.article-04 {order: 4;}
+*/
